@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E9D84A3F-52D5-3927-F2C9-E3B90B09D4A7" name="Factura">
+<createdBy>henrr</createdBy>
+<createdTime>2022-08-26 02:02:31 UTC</createdTime>
+<generatorID>D1C3A693-A8C1-950A-8BC7-A117498C47B0</generatorID>
+<ownerDesignName>Modelo Fisico</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_Factura" id="5ACA00E9-D046-E8E3-2F8B-6F22AAFFA5A4">
+<createdBy>henrr</createdBy>
+<createdTime>2022-08-26 02:02:31 UTC</createdTime>
+<generatorID>F215E814-CB07-CB50-520E-D1B7649A2223</generatorID>
+<ownerDesignName>Modelo Fisico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Fecha" id="96834B2B-36B5-03F1-BC09-6263C4E05CB5">
+<createdBy>henrr</createdBy>
+<createdTime>2022-08-26 02:02:31 UTC</createdTime>
+<generatorID>5DFC0B8D-22E7-5DD4-9CF8-46D4DF692860</generatorID>
+<ownerDesignName>Modelo Fisico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cliente_Id_Cliente" id="4FE98303-501E-D7C7-B805-FEF4DDD45AED">
+<createdBy>henrr</createdBy>
+<createdTime>2022-08-26 02:02:31 UTC</createdTime>
+<generatorID>00DEAD93-A94E-6726-7DE9-062795CA29B6</generatorID>
+<ownerDesignName>Modelo Fisico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9BEF4498-373C-A010-5DD5-D019CECD9960" referredColumn="F4820733-B5FE-437F-3939-A76C7370DB1E"/>
+</associations>
+</Column>
+<Column name="Empleado_Id_Empleado" id="69676FF8-F1CF-AAE6-3E74-B7A38DE8008F">
+<createdBy>henrr</createdBy>
+<createdTime>2022-08-26 02:02:31 UTC</createdTime>
+<generatorID>621CAD25-5097-E339-1D1A-3BB0595758D9</generatorID>
+<ownerDesignName>Modelo Fisico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="64CE60F5-8B3C-3186-9302-F765B7E422DA" referredColumn="51845D0B-0DB2-B2A6-1C3B-8D8DE20843B6"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="27401E9C-FB9F-BA2C-DBB6-F03B2485F34D" name="Factura_PK">
+<createdBy>henrr</createdBy>
+<createdTime>2022-08-26 02:02:31 UTC</createdTime>
+<generatorID>17DBA7ED-3970-BCB2-544A-951AC9ADA444</generatorID>
+<ownerDesignName>Modelo Fisico</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5ACA00E9-D046-E8E3-2F8B-6F22AAFFA5A4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DFE0F5E7-57E8-C893-FB75-906EB631CD10" name="Factura_Cliente_FK">
+<createdBy>henrr</createdBy>
+<createdTime>2022-08-26 02:02:31 UTC</createdTime>
+<generatorID>3D2CEF65-608C-B7B5-395B-A9DF53ABB79A</generatorID>
+<ownerDesignName>Modelo Fisico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4FE98303-501E-D7C7-B805-FEF4DDD45AED"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B37D56DB-C8A1-AAE6-1190-863B8D238960" name="Factura_Empleado_FK">
+<createdBy>henrr</createdBy>
+<createdTime>2022-08-26 02:02:31 UTC</createdTime>
+<generatorID>CDDD000D-B8DE-2D32-9FFF-A2FA14C40F36</generatorID>
+<ownerDesignName>Modelo Fisico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="69676FF8-F1CF-AAE6-3E74-B7A38DE8008F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

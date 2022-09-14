@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="71C5B44B-30B4-42B1-D968-012022C283BB" name="Empleado">
+<createdBy>henrr</createdBy>
+<createdTime>2022-08-26 02:02:31 UTC</createdTime>
+<generatorID>326E5DD5-5BCB-DB7D-0072-2B6963820004</generatorID>
+<ownerDesignName>Modelo Fisico</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_Empleado" id="51845D0B-0DB2-B2A6-1C3B-8D8DE20843B6">
+<createdBy>henrr</createdBy>
+<createdTime>2022-08-26 02:02:31 UTC</createdTime>
+<generatorID>C496CFB3-A0C8-6461-C35E-21592DA1C490</generatorID>
+<ownerDesignName>Modelo Fisico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nombre" id="E56705B5-4695-A4C9-8449-74043F800398">
+<createdBy>henrr</createdBy>
+<createdTime>2022-08-26 02:02:31 UTC</createdTime>
+<generatorID>B2F33634-263F-537A-FB4C-05D479647E25</generatorID>
+<ownerDesignName>Modelo Fisico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Apellido" id="339DFE35-F8CA-D191-CD8C-77BF59AC2354">
+<createdBy>henrr</createdBy>
+<createdTime>2022-08-26 02:02:31 UTC</createdTime>
+<generatorID>A5B82E46-E8EB-61DD-B6EB-4F665FB5EFA6</generatorID>
+<ownerDesignName>Modelo Fisico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Pais_Id_Pais" id="074088DE-38AF-CEF1-F7C6-6D7CB63516A8">
+<createdBy>henrr</createdBy>
+<createdTime>2022-08-26 02:02:31 UTC</createdTime>
+<generatorID>9D43977A-9D3C-2812-72E2-EFEF272B91A5</generatorID>
+<ownerDesignName>Modelo Fisico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D757B86B-2DA7-6657-6299-16A3CCE4E582" referredColumn="4A4D38BE-7055-9554-99FA-B68BF71C1B74"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8D13B669-C31A-EB44-011F-58AAEA9BFCDE" name="Empleado_PK">
+<createdBy>henrr</createdBy>
+<createdTime>2022-08-26 02:02:31 UTC</createdTime>
+<generatorID>C5A1513C-306E-3803-AD6B-1D9C99C9AB36</generatorID>
+<ownerDesignName>Modelo Fisico</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="51845D0B-0DB2-B2A6-1C3B-8D8DE20843B6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4AD37882-4052-A16C-6A0A-E89BE4033169" name="Empleado_Pais_FK">
+<createdBy>henrr</createdBy>
+<createdTime>2022-08-26 02:02:31 UTC</createdTime>
+<generatorID>7CCFC7EA-F51E-A320-C639-2DACC767A422</generatorID>
+<ownerDesignName>Modelo Fisico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="074088DE-38AF-CEF1-F7C6-6D7CB63516A8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

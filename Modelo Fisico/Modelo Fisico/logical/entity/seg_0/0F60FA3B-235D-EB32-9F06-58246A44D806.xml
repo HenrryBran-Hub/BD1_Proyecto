@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0F60FA3B-235D-EB32-9F06-58246A44D806" name="Producto">
+<createdBy>henrr</createdBy>
+<createdTime>2022-08-26 00:38:06 UTC</createdTime>
+<ownerDesignName>Modelo Fisico</ownerDesignName>
+<engineerTo>
+<item key="6153E8D8-B62D-2B87-24D6-C77582BA044F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id_Producto" id="5E5A7B5A-3986-37C2-D3A5-EAE535C18ECE">
+<createdBy>henrr</createdBy>
+<createdTime>2022-08-26 00:38:45 UTC</createdTime>
+<ownerDesignName>Modelo Fisico</ownerDesignName>
+<engineerTo>
+<item key="6153E8D8-B62D-2B87-24D6-C77582BA044F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nombre" id="A6CDD160-3DF1-B290-5B4F-96F0E938AD25">
+<createdBy>henrr</createdBy>
+<createdTime>2022-08-26 00:39:06 UTC</createdTime>
+<ownerDesignName>Modelo Fisico</ownerDesignName>
+<engineerTo>
+<item key="6153E8D8-B62D-2B87-24D6-C77582BA044F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Precio" id="B370DF12-5916-A753-850A-6FC79B1800CF">
+<createdBy>henrr</createdBy>
+<createdTime>2022-08-26 00:39:30 UTC</createdTime>
+<ownerDesignName>Modelo Fisico</ownerDesignName>
+<engineerTo>
+<item key="6153E8D8-B62D-2B87-24D6-C77582BA044F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Categoria" id="5D67D14D-4F1D-383A-AD4A-912C460A319D">
+<createdBy>henrr</createdBy>
+<createdTime>2022-08-26 00:59:12 UTC</createdTime>
+<generatorID>55BA28B8-F093-A486-0C4D-06A478483BBE</generatorID>
+<ownerDesignName>Modelo Fisico</ownerDesignName>
+<engineerTo>
+<item key="6153E8D8-B62D-2B87-24D6-C77582BA044F" value="true"/>
+</engineerTo>
+<referedAttribute>24B0464D-6931-8B38-EC44-577B88B802F0</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="3F1FD2C9-00F8-B2D5-D74A-75BA10E75A87" name="Producto PK">
+<createdBy>henrr</createdBy>
+<createdTime>2022-08-26 00:39:01 UTC</createdTime>
+<ownerDesignName>Modelo Fisico</ownerDesignName>
+<engineerTo>
+<item key="6153E8D8-B62D-2B87-24D6-C77582BA044F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5E5A7B5A-3986-37C2-D3A5-EAE535C18ECE</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

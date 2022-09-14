@@ -1,0 +1,149 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="61D03E7B-31B9-B2BF-B7AC-24CE6C175128" name="Cliente">
+<createdBy>henrr</createdBy>
+<createdTime>2022-08-26 02:02:30 UTC</createdTime>
+<generatorID>9BEC9671-AFF0-3826-01A6-47C103EB82C7</generatorID>
+<ownerDesignName>Modelo Fisico</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_Cliente" id="F4820733-B5FE-437F-3939-A76C7370DB1E">
+<createdBy>henrr</createdBy>
+<createdTime>2022-08-26 02:02:31 UTC</createdTime>
+<generatorID>830E6019-1A00-8A16-170D-EE63BA24A0D8</generatorID>
+<ownerDesignName>Modelo Fisico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nombre" id="FBEB58F2-F8C1-3249-6FE3-1F97AC5D6352">
+<createdBy>henrr</createdBy>
+<createdTime>2022-08-26 02:02:31 UTC</createdTime>
+<generatorID>9E7341B9-4E59-B2C8-490D-AE82DCC1636C</generatorID>
+<ownerDesignName>Modelo Fisico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Apellido" id="FCEC52A3-6F3A-18FC-7ED0-F5AB890BDF26">
+<createdBy>henrr</createdBy>
+<createdTime>2022-08-26 02:02:31 UTC</createdTime>
+<generatorID>DD28C7DC-FED3-3C88-6C4A-C1B1AFEE5CED</generatorID>
+<ownerDesignName>Modelo Fisico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Direccion" id="C632F2AA-FA7E-902D-5E2D-5631173FA9DE">
+<createdBy>henrr</createdBy>
+<createdTime>2022-08-26 02:02:31 UTC</createdTime>
+<generatorID>04D81C59-610B-83DD-7DD8-BFD07C94EFDA</generatorID>
+<ownerDesignName>Modelo Fisico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150 CHAR</dataTypeSize>
+<ownDataTypeParameters>150 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Telefono" id="3BD2E123-EB45-EE12-277E-F80ABF50ADED">
+<createdBy>henrr</createdBy>
+<createdTime>2022-08-26 02:02:31 UTC</createdTime>
+<generatorID>89D39A58-46D6-788C-A401-E507B766E84B</generatorID>
+<ownerDesignName>Modelo Fisico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Salario" id="508FAAB5-1E43-912B-012F-6492EB18A090">
+<createdBy>henrr</createdBy>
+<createdTime>2022-08-26 02:02:31 UTC</createdTime>
+<generatorID>299A3505-6919-1E70-EA8C-0DD99FDF5E05</generatorID>
+<ownerDesignName>Modelo Fisico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,5,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Genero_Id_Genero" id="F2EBD7FC-EC30-42DE-EB54-EFEAB8B2F83B">
+<createdBy>henrr</createdBy>
+<createdTime>2022-08-26 02:02:31 UTC</createdTime>
+<generatorID>3DB5BB6D-828B-035F-1980-AA9A263E0E08</generatorID>
+<ownerDesignName>Modelo Fisico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C093903F-6774-545B-AC93-F15C3B872DA8" referredColumn="22D02279-5534-F23D-55C8-75ABFA113901"/>
+</associations>
+</Column>
+<Column name="Pais_Id_Pais" id="8D9D2A90-5E38-D36A-854D-B9AE0763B52B">
+<createdBy>henrr</createdBy>
+<createdTime>2022-08-26 02:02:31 UTC</createdTime>
+<generatorID>C4660EC2-C7DF-C221-7C67-AC11478F321F</generatorID>
+<ownerDesignName>Modelo Fisico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9C9867C1-134E-347D-791F-08684B72452E" referredColumn="4A4D38BE-7055-9554-99FA-B68BF71C1B74"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DB2452E9-097E-2060-CC1A-396399E277D6" name="Cliente_PK">
+<createdBy>henrr</createdBy>
+<createdTime>2022-08-26 02:02:31 UTC</createdTime>
+<generatorID>A634A989-4A1A-2EB4-F4FB-BF6938A31801</generatorID>
+<ownerDesignName>Modelo Fisico</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F4820733-B5FE-437F-3939-A76C7370DB1E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BB095567-DD80-C55E-9CE9-8C7D9A05A028" name="Cliente_Genero_FK">
+<createdBy>henrr</createdBy>
+<createdTime>2022-08-26 02:02:31 UTC</createdTime>
+<generatorID>7F524503-BD56-76FF-8F80-BECDA7226C1B</generatorID>
+<ownerDesignName>Modelo Fisico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F2EBD7FC-EC30-42DE-EB54-EFEAB8B2F83B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="821CEB3F-22EA-7439-E096-4F3C9157C297" name="Cliente_Pais_FK">
+<createdBy>henrr</createdBy>
+<createdTime>2022-08-26 02:02:31 UTC</createdTime>
+<generatorID>162C45D4-FA7D-EDAE-A020-AE3C6BA37A1C</generatorID>
+<ownerDesignName>Modelo Fisico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8D9D2A90-5E38-D36A-854D-B9AE0763B52B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
