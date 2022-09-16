@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="890A100F-A913-446A-1F80-3921390347F1" name="Pais">
+<createdBy>henrr</createdBy>
+<createdTime>2022-08-26 00:43:33 UTC</createdTime>
+<ownerDesignName>Modelo Logico</ownerDesignName>
+<engineerTo>
+<item key="6153E8D8-B62D-2B87-24D6-C77582BA044F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id_Pais" id="5D8567F7-BB13-11C7-CE64-2E60343B95DB">
+<createdBy>henrr</createdBy>
+<createdTime>2022-08-26 00:43:43 UTC</createdTime>
+<ownerDesignName>Modelo Logico</ownerDesignName>
+<engineerTo>
+<item key="6153E8D8-B62D-2B87-24D6-C77582BA044F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nombre" id="652A6E4B-64AF-FD2F-62D8-0891F61EE435">
+<createdBy>henrr</createdBy>
+<createdTime>2022-08-26 00:43:59 UTC</createdTime>
+<ownerDesignName>Modelo Logico</ownerDesignName>
+<engineerTo>
+<item key="6153E8D8-B62D-2B87-24D6-C77582BA044F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="CF45AE0C-4825-86A6-6EEA-104718972BDA" name="Pais PK">
+<createdBy>henrr</createdBy>
+<createdTime>2022-08-26 00:43:56 UTC</createdTime>
+<ownerDesignName>Modelo Logico</ownerDesignName>
+<engineerTo>
+<item key="6153E8D8-B62D-2B87-24D6-C77582BA044F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5D8567F7-BB13-11C7-CE64-2E60343B95DB</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
