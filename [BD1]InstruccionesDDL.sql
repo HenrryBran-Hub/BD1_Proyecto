@@ -44,7 +44,7 @@ CREATE TABLE IF NOT EXISTS Genero(
 CREATE TABLE IF NOT EXISTS Producto(
 	Id_Producto INT AUTO_INCREMENT,
     Nombre VARCHAR(100) NOT NULL,
-    Precio DOUBLE(10,2) NOT NULL,
+    Precio DECIMAL(12,2) NOT NULL,
     Id_Categoria INT NOT NULL,
     PRIMARY KEY (Id_Producto),
     FOREIGN KEY (Id_Categoria) REFERENCES Categoria(Id_Categoria)
@@ -60,7 +60,9 @@ CREATE TABLE IF NOT EXISTS Cliente (
     Apellido VARCHAR(50) NOT NULL,
     Direccion VARCHAR(150) NOT NULL,
     Telefono BIGINT NOT NULL,
-    Salario DOUBLE(5,2) NOT NULL,
+    Tarjeta BIGINT NOT NULL,
+    Edad INT NOT NULL,
+    Salario DECIMAL(12,2) NOT NULL,
     Id_Genero INT NOT NULL,
     Id_Pais INT NOT NULL,
     PRIMARY KEY (Id_Cliente),
@@ -99,7 +101,7 @@ CREATE TABLE IF NOT EXISTS Factura(
 #CREAMOS LA TABLA DE DETALLE_FACTURA
 #-------------------------------------------------------------------------
 CREATE TABLE IF NOT EXISTS Detalle_Factura(
-	Id_Linea INT AUTO_INCREMENT,
+	Id_Linea INT NOT NULL,
     Cantidad INT NOT NULL,
     Id_Factura INT NOT NULL,
     Id_Empleado INT NOT NULL,    
@@ -110,3 +112,4 @@ CREATE TABLE IF NOT EXISTS Detalle_Factura(
 	FOREIGN KEY (Id_Producto) REFERENCES Producto(Id_Producto)
     ON DELETE CASCADE ON UPDATE CASCADE
 )ENGINE=INNODB;
+
