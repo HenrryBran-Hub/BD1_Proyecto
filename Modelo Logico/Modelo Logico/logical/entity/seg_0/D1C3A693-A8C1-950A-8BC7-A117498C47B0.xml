@@ -53,28 +53,15 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Id_Empleado" id="621CAD25-5097-E339-1D1A-3BB0595758D9">
-<createdBy>henrr</createdBy>
-<createdTime>2022-08-26 01:03:57 UTC</createdTime>
-<generatorID>CDDD000D-B8DE-2D32-9FFF-A2FA14C40F36</generatorID>
-<ownerDesignName>Modelo Logico</ownerDesignName>
-<engineerTo>
-<item key="6153E8D8-B62D-2B87-24D6-C77582BA044F" value="true"/>
-</engineerTo>
-<referedAttribute>C496CFB3-A0C8-6461-C35E-21592DA1C490</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="17DBA7ED-3970-BCB2-544A-951AC9ADA444" name="Factura PK">
 <createdBy>henrr</createdBy>
 <createdTime>2022-08-26 00:48:03 UTC</createdTime>
 <ownerDesignName>Modelo Logico</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="6153E8D8-B62D-2B87-24D6-C77582BA044F" value="true"/>
+<item key="6153E8D8-B62D-2B87-24D6-C77582BA044F" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

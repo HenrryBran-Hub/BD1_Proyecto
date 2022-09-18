@@ -78,6 +78,30 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="Tarjeta" id="91A7EF88-E692-4300-8069-9FF7CD26BF8D">
+<createdBy>henrr</createdBy>
+<createdTime>2022-09-17 20:22:35 UTC</createdTime>
+<ownerDesignName>Modelo Logico</ownerDesignName>
+<engineerTo>
+<item key="6153E8D8-B62D-2B87-24D6-C77582BA044F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Edad" id="4D69462B-6A0B-A30F-EDF3-4322A2B29FA9">
+<createdBy>henrr</createdBy>
+<createdTime>2022-09-17 20:19:49 UTC</createdTime>
+<ownerDesignName>Modelo Logico</ownerDesignName>
+<engineerTo>
+<item key="6153E8D8-B62D-2B87-24D6-C77582BA044F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 <Attribute name="Salario" id="299A3505-6919-1E70-EA8C-0DD99FDF5E05">
 <createdBy>henrr</createdBy>
 <createdTime>2022-08-26 00:46:06 UTC</createdTime>
@@ -88,9 +112,9 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT026</logicalDatatype>
-<dataTypePrecision>5</dataTypePrecision>
+<dataTypePrecision>12</dataTypePrecision>
 <dataTypeScale>2</dataTypeScale>
-<ownDataTypeParameters>,5,2</ownDataTypeParameters>
+<ownDataTypeParameters>,12,2</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Id_Genero" id="3DB5BB6D-828B-035F-1980-AA9A263E0E08">
 <createdBy>henrr</createdBy>
@@ -126,8 +150,9 @@
 <createdBy>henrr</createdBy>
 <createdTime>2022-08-26 00:44:39 UTC</createdTime>
 <ownerDesignName>Modelo Logico</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="6153E8D8-B62D-2B87-24D6-C77582BA044F" value="true"/>
+<item key="6153E8D8-B62D-2B87-24D6-C77582BA044F" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

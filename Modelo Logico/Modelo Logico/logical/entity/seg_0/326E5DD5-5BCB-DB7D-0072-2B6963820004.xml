@@ -73,8 +73,9 @@
 <createdBy>henrr</createdBy>
 <createdTime>2022-08-26 00:42:48 UTC</createdTime>
 <ownerDesignName>Modelo Logico</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="6153E8D8-B62D-2B87-24D6-C77582BA044F" value="true"/>
+<item key="6153E8D8-B62D-2B87-24D6-C77582BA044F" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

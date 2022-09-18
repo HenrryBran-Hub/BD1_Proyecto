@@ -1,0 +1,128 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F23908E9-B8DD-F293-4FC4-2ECF4D7B91A9" name="Detalle_Factura">
+<createdBy>henrr</createdBy>
+<createdTime>2022-09-17 20:18:37 UTC</createdTime>
+<generatorID>EEB56B1A-DE4B-3E3B-3A86-B0BE246225C3</generatorID>
+<ownerDesignName>Modelo Logico</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_Linea" id="AA9A33A4-1F5B-5818-4622-2743FD937030">
+<createdBy>henrr</createdBy>
+<createdTime>2022-09-17 20:18:37 UTC</createdTime>
+<generatorID>4FF063E4-F00C-98A1-2934-BBC6164FF9BE</generatorID>
+<ownerDesignName>Modelo Logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cantidad" id="D14FC2A1-624C-142C-7543-167CF2964F67">
+<createdBy>henrr</createdBy>
+<createdTime>2022-09-17 20:18:37 UTC</createdTime>
+<generatorID>46C4FFF1-F49C-99DC-CD45-7BF0C3A515C8</generatorID>
+<ownerDesignName>Modelo Logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Producto_Id_Producto" id="3258D3C8-C095-F114-4DA2-F24BEBCF83F1">
+<createdBy>henrr</createdBy>
+<createdTime>2022-09-17 20:18:37 UTC</createdTime>
+<generatorID>3384DCE8-FB7E-7C9F-D1F7-6AF3767839AD</generatorID>
+<ownerDesignName>Modelo Logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7177713E-B215-C51E-DB1F-CA1B30F4D761" referredColumn="73C88C5A-DC9F-2C93-20E7-946D12502D53"/>
+</associations>
+</Column>
+<Column name="Factura_Id_Factura" id="8E5B3EC9-8AED-BAF7-E059-FE983362510C">
+<createdBy>henrr</createdBy>
+<createdTime>2022-09-17 20:18:37 UTC</createdTime>
+<generatorID>25EE2839-2AEE-F5C7-D113-37DF985FF0C9</generatorID>
+<ownerDesignName>Modelo Logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="27BA06A4-572A-4BAF-4460-6B42D10259FD" referredColumn="6CE16293-7FDB-057E-CBA3-1CBE4E48754C"/>
+</associations>
+</Column>
+<Column name="Empleado_Id_Empleado" id="EFD94496-B77E-3C18-5EE8-D544B617986C">
+<createdBy>henrr</createdBy>
+<createdTime>2022-09-17 20:18:37 UTC</createdTime>
+<generatorID>97E09094-5E21-260D-8513-EE265C5E7D23</generatorID>
+<ownerDesignName>Modelo Logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D6590E13-358F-16D3-E895-01223892E546" referredColumn="28CDA8EC-8011-2E53-9C39-90D35BA464B2"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="26FB8326-8E6C-4573-22BD-FDB316BFB3DC" name="Detalle_Factura_PK">
+<createdBy>henrr</createdBy>
+<createdTime>2022-09-17 20:18:37 UTC</createdTime>
+<generatorID>0EDA6918-5898-849E-196C-B3B63E45DE1C</generatorID>
+<ownerDesignName>Modelo Logico</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AA9A33A4-1F5B-5818-4622-2743FD937030"/>
+<colUsage columnID="8E5B3EC9-8AED-BAF7-E059-FE983362510C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="18FBE687-CC8E-4E7E-BD31-74C159FA65BD" name="Detalle_Factura_Empleado_FK">
+<createdBy>henrr</createdBy>
+<createdTime>2022-09-17 20:18:37 UTC</createdTime>
+<generatorID>C86C3CFC-B2CA-F09D-D8D4-0B9553DBB325</generatorID>
+<ownerDesignName>Modelo Logico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EFD94496-B77E-3C18-5EE8-D544B617986C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7CC5540F-256C-DD0F-7E26-D839BA875CDC" name="Detalle_Factura_Producto_FK">
+<createdBy>henrr</createdBy>
+<createdTime>2022-09-17 20:18:37 UTC</createdTime>
+<generatorID>BC48353E-A508-3B03-E911-748AC2428435</generatorID>
+<ownerDesignName>Modelo Logico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3258D3C8-C095-F114-4DA2-F24BEBCF83F1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="939CFF56-7EF7-BA5E-F99E-7CC9FF7C8B3F" name="Detalle_Factura_Factura_FK">
+<createdBy>henrr</createdBy>
+<createdTime>2022-09-17 20:18:37 UTC</createdTime>
+<generatorID>DA77337A-5550-E418-9665-0F7420F42385</generatorID>
+<ownerDesignName>Modelo Logico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8E5B3EC9-8AED-BAF7-E059-FE983362510C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
