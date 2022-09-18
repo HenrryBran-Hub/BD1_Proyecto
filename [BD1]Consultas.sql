@@ -67,12 +67,10 @@ LIMIT 1;
 FROM Producto
 INNER JOIN Detalle_Factura
 ON Producto.Id_Producto = Detalle_Factura.Id_Producto
-INNER JOIN Factura
-ON Detalle_Factura.Id_Factura = Factura.Id_Factura
-INNER JOIN Cliente 
-ON Factura.Id_Cliente = Cliente.Id_Cliente
+INNER JOIN Empleado
+ON Detalle_Factura.Id_Empleado= Empleado.Id_Empleado
 INNER JOIN Pais
-ON Cliente.Id_Pais = Pais.Id_Pais
+ON Empleado.Id_Pais = Pais.Id_Pais
 GROUP BY Pais.Nombre
 ORDER BY Total DESC
 LIMIT 1)
@@ -81,12 +79,10 @@ UNION
 FROM Producto
 INNER JOIN Detalle_Factura
 ON Producto.Id_Producto = Detalle_Factura.Id_Producto
-INNER JOIN Factura
-ON Detalle_Factura.Id_Factura = Factura.Id_Factura
-INNER JOIN Cliente 
-ON Factura.Id_Cliente = Cliente.Id_Cliente
+INNER JOIN Empleado
+ON Detalle_Factura.Id_Empleado= Empleado.Id_Empleado
 INNER JOIN Pais
-ON Cliente.Id_Pais = Pais.Id_Pais
+ON Empleado.Id_Pais = Pais.Id_Pais
 GROUP BY Pais.Nombre
 ORDER BY Total ASC
 LIMIT 1);
@@ -107,7 +103,7 @@ SELECT * FROM
 	INNER JOIN Pais
 	ON Cliente.Id_Pais = Pais.Id_Pais
 	GROUP BY Pais.Nombre
-	ORDER BY Total DESC
+	ORDER BY Total ASC
 	LIMIT 5) AS PAISES
 ORDER BY Total ASC;
 
@@ -140,7 +136,8 @@ LIMIT 1);
 #SE DEBE DE MOSTRAR NOMBRE DEL PAIS,NOMBRE DE LA CATEGORIA Y CANTIDAD 
 #DE UNIDADES
 #-------------------------------------------------------------------------
-SELECT Descripcion,Pais,MAX(No_Articulos) AS No_MAX_Articulos
+SELECT Descripcion AS Categoria,Pais,No_MAX_Articulos AS MAX_MIN_Articulos FROM (
+(SELECT Descripcion,Pais,MAX(No_Articulos) AS No_MAX_Articulos
 FROM (
 	SELECT Categoria.Descripcion,Pais.Nombre AS Pais,SUM(Cantidad) as No_Articulos
 	FROM Categoria
@@ -159,23 +156,29 @@ FROM (
 WHERE Pais IN (
     SELECT Nombre FROM Pais)
 GROUP BY Pais
-ORDER BY Pais,No_MAX_Articulos ASC;
-/*
-SELECT Categoria.Descripcion,Pais.Nombre AS Pais,SUM(Cantidad),SUM(Cantidad*Precio) AS Total
-FROM Categoria
-INNER JOIN Producto
-ON Categoria.Id_Categoria = Producto.Id_Categoria
-INNER JOIN Detalle_Factura
-ON Producto.Id_Producto = Detalle_Factura.Id_Producto
-INNER JOIN Factura
-ON Detalle_Factura.Id_Factura = Factura.Id_Factura
-INNER JOIN Cliente 
-ON Factura.Id_Cliente = Cliente.Id_Cliente
-INNER JOIN Pais
-ON Cliente.Id_Pais = Pais.Id_Pais
-GROUP BY Categoria.Descripcion,Pais.Nombre
-order by Pais.Nombre, SUM(Cantidad);
-*/
+ORDER BY Pais,No_MAX_Articulos ASC)
+UNION
+(SELECT Descripcion,Pais,MIN(No_Articulos) AS No_MAX_Articulos
+FROM (
+	SELECT Categoria.Descripcion,Pais.Nombre AS Pais,SUM(Cantidad) as No_Articulos
+	FROM Categoria
+	INNER JOIN Producto
+	ON Categoria.Id_Categoria = Producto.Id_Categoria
+	INNER JOIN Detalle_Factura
+	ON Producto.Id_Producto = Detalle_Factura.Id_Producto
+	INNER JOIN Factura
+	ON Detalle_Factura.Id_Factura = Factura.Id_Factura
+	INNER JOIN Cliente 
+	ON Factura.Id_Cliente = Cliente.Id_Cliente
+	INNER JOIN Pais
+	ON Cliente.Id_Pais = Pais.Id_Pais
+	GROUP BY Categoria.Descripcion,Pais.Nombre
+	ORDER BY Pais.Nombre,SUM(Cantidad) ASC) AS SUBCON2
+WHERE Pais IN (
+    SELECT Nombre FROM Pais)
+GROUP BY Pais
+ORDER BY Pais,No_MAX_Articulos ASC)) as SUBCON3
+ORDER BY Pais,No_MAX_Articulos DESC;
 
 #-------------------------------------------------------------------------
 #8.MOSTRAR LAS VENTAS POR MES DE INGLATERRA. DEBE MOSTRAR EL NUMERO DE MES
@@ -185,14 +188,14 @@ SELECT MONTH(Fecha) AS Mes,SUM(Cantidad*Precio) AS Total
 FROM Producto
 INNER JOIN Detalle_Factura
 ON Producto.Id_Producto = Detalle_Factura.Id_Producto
+INNER JOIN Empleado
+ON Detalle_Factura.Id_Empleado = Empleado.Id_Empleado 
 INNER JOIN Factura
 ON Detalle_Factura.Id_Factura = Factura.Id_Factura
-INNER JOIN Cliente 
-ON Factura.Id_Cliente = Cliente.Id_Cliente
 INNER JOIN Pais
-ON Cliente.Id_Pais = Pais.Id_Pais
+ON Empleado.Id_Pais = Pais.Id_Pais
 WHERE Pais.Nombre LIKE 'Inglaterra\r'
-GROUP BY Mes,Pais.Nombre
+GROUP BY Mes
 ORDER BY Pais.Nombre,Mes;
 
 #-------------------------------------------------------------------------
@@ -231,6 +234,7 @@ INNER JOIN Detalle_Factura
 ON Producto.Id_Producto = Detalle_Factura.Id_Producto
 WHERE Categoria.Descripcion LIKE 'Deportes\r'
 GROUP BY Producto.Id_Producto,Producto.Nombre
-ORDER BY  No_Articulos, Producto.Nombre DESC;
+ORDER BY Producto.Nombre ASC;
 
 
+#ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '123456789';
