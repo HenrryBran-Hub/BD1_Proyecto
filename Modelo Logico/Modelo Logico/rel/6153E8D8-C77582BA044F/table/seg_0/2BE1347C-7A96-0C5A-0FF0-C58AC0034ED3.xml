@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2BE1347C-7A96-0C5A-0FF0-C58AC0034ED3" name="Genero">
+<createdBy>henrr</createdBy>
+<createdTime>2022-09-17 20:18:37 UTC</createdTime>
+<generatorID>165024AB-9A9F-5847-C999-0BD293F0D42D</generatorID>
+<ownerDesignName>Modelo Logico</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_Genero" id="8A2B405C-7E31-2D49-FF95-939F8D28F635">
+<createdBy>henrr</createdBy>
+<createdTime>2022-09-17 20:18:37 UTC</createdTime>
+<generatorID>50AF4D69-334D-2954-991C-5DAA4800ACAD</generatorID>
+<ownerDesignName>Modelo Logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Tipo" id="D2FC0E6F-70C1-EC68-D365-A9BB3C52BC34">
+<createdBy>henrr</createdBy>
+<createdTime>2022-09-17 20:18:37 UTC</createdTime>
+<generatorID>2B62CD6A-8A6D-C37F-C0DD-71A5ABBF898F</generatorID>
+<ownerDesignName>Modelo Logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CC2F0F16-3228-B28B-1871-D15285564598" name="Genero_PK">
+<createdBy>henrr</createdBy>
+<createdTime>2022-09-17 20:18:37 UTC</createdTime>
+<generatorID>2B851E67-377D-5B89-7910-77208A28831E</generatorID>
+<ownerDesignName>Modelo Logico</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8A2B405C-7E31-2D49-FF95-939F8D28F635"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

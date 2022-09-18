@@ -50,9 +50,9 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT026</logicalDatatype>
-<dataTypePrecision>10</dataTypePrecision>
+<dataTypePrecision>12</dataTypePrecision>
 <dataTypeScale>2</dataTypeScale>
-<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<ownDataTypeParameters>,12,2</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Id_Categoria" id="5D67D14D-4F1D-383A-AD4A-912C460A319D">
 <createdBy>henrr</createdBy>
@@ -74,8 +74,9 @@
 <createdBy>henrr</createdBy>
 <createdTime>2022-08-26 00:39:01 UTC</createdTime>
 <ownerDesignName>Modelo Logico</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="6153E8D8-B62D-2B87-24D6-C77582BA044F" value="true"/>
+<item key="6153E8D8-B62D-2B87-24D6-C77582BA044F" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="7177713E-B215-C51E-DB1F-CA1B30F4D761" containerWithKeyObject="F23908E9-B8DD-F293-4FC4-2ECF4D7B91A9" localFKIndex="7CC5540F-256C-DD0F-7E26-D839BA875CDC" name="Detalle_Factura_Producto_FK">
+<createdBy>henrr</createdBy>
+<createdTime>2022-09-17 20:18:37 UTC</createdTime>
+<generatorID>BC48353E-A508-3B03-E911-748AC2428435</generatorID>
+<ownerDesignName>Modelo Logico</ownerDesignName>
+<referredTableLongName>Producto</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>E4ADC831-1A00-5848-8B8D-EB3712D499F5</referredTableID>
+<keyObject>3AB2DB98-D084-D996-A8DA-20DBDAA24A40</keyObject>
+<referredKeyID>3AB2DB98-D084-D996-A8DA-20DBDAA24A40</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Id_Producto</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

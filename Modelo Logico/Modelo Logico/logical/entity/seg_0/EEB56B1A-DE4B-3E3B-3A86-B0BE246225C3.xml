@@ -27,6 +27,20 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="Id_Factura" id="25EE2839-2AEE-F5C7-D113-37DF985FF0C9">
+<createdBy>henrr</createdBy>
+<createdTime>2022-08-26 01:04:37 UTC</createdTime>
+<generatorID>DA77337A-5550-E418-9665-0F7420F42385</generatorID>
+<ownerDesignName>Modelo Logico</ownerDesignName>
+<engineerTo>
+<item key="6153E8D8-B62D-2B87-24D6-C77582BA044F" value="true"/>
+</engineerTo>
+<referedAttribute>F215E814-CB07-CB50-520E-D1B7649A2223</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 <Attribute name="Cantidad" id="46C4FFF1-F49C-99DC-CD45-7BF0C3A515C8">
 <createdBy>henrr</createdBy>
 <createdTime>2022-08-26 00:52:04 UTC</createdTime>
@@ -54,15 +68,15 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Id_Factura" id="25EE2839-2AEE-F5C7-D113-37DF985FF0C9">
+<Attribute name="Id_Empleado" id="97E09094-5E21-260D-8513-EE265C5E7D23">
 <createdBy>henrr</createdBy>
-<createdTime>2022-08-26 01:04:37 UTC</createdTime>
-<generatorID>DA77337A-5550-E418-9665-0F7420F42385</generatorID>
+<createdTime>2022-09-17 20:17:27 UTC</createdTime>
+<generatorID>C86C3CFC-B2CA-F09D-D8D4-0B9553DBB325</generatorID>
 <ownerDesignName>Modelo Logico</ownerDesignName>
 <engineerTo>
 <item key="6153E8D8-B62D-2B87-24D6-C77582BA044F" value="true"/>
 </engineerTo>
-<referedAttribute>F215E814-CB07-CB50-520E-D1B7649A2223</referedAttribute>
+<referedAttribute>C496CFB3-A0C8-6461-C35E-21592DA1C490</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -74,13 +88,13 @@
 <createdBy>henrr</createdBy>
 <createdTime>2022-08-26 01:55:07 UTC</createdTime>
 <ownerDesignName>Modelo Logico</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="6153E8D8-B62D-2B87-24D6-C77582BA044F" value="true"/>
+<item key="6153E8D8-B62D-2B87-24D6-C77582BA044F" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>4FF063E4-F00C-98A1-2934-BBC6164FF9BE</attributeRef>
-<attributeRef>3384DCE8-FB7E-7C9F-D1F7-6AF3767839AD</attributeRef>
 <attributeRef>25EE2839-2AEE-F5C7-D113-37DF985FF0C9</attributeRef>
 </usedAttributes>
 </identifier>

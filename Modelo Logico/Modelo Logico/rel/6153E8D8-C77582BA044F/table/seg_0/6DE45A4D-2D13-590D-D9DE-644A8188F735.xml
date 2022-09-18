@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6DE45A4D-2D13-590D-D9DE-644A8188F735" name="Factura">
+<createdBy>henrr</createdBy>
+<createdTime>2022-09-17 20:18:37 UTC</createdTime>
+<generatorID>D1C3A693-A8C1-950A-8BC7-A117498C47B0</generatorID>
+<ownerDesignName>Modelo Logico</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_Factura" id="6CE16293-7FDB-057E-CBA3-1CBE4E48754C">
+<createdBy>henrr</createdBy>
+<createdTime>2022-09-17 20:18:37 UTC</createdTime>
+<generatorID>F215E814-CB07-CB50-520E-D1B7649A2223</generatorID>
+<ownerDesignName>Modelo Logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Fecha" id="3012AC66-5573-71E5-929F-08C60B365533">
+<createdBy>henrr</createdBy>
+<createdTime>2022-09-17 20:18:37 UTC</createdTime>
+<generatorID>5DFC0B8D-22E7-5DD4-9CF8-46D4DF692860</generatorID>
+<ownerDesignName>Modelo Logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cliente_Id_Cliente" id="5C14DA13-0441-3B1B-4E4D-120FE0405526">
+<createdBy>henrr</createdBy>
+<createdTime>2022-09-17 20:18:37 UTC</createdTime>
+<generatorID>00DEAD93-A94E-6726-7DE9-062795CA29B6</generatorID>
+<ownerDesignName>Modelo Logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4DDD986A-A7E3-BC56-7C39-FDAE821CFBD3" referredColumn="1D02A248-5930-A52A-F511-1B26ECD60112"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E967A47E-8AAF-C145-95CE-A8C8B257F51C" name="Factura_PK">
+<createdBy>henrr</createdBy>
+<createdTime>2022-09-17 20:18:37 UTC</createdTime>
+<generatorID>17DBA7ED-3970-BCB2-544A-951AC9ADA444</generatorID>
+<ownerDesignName>Modelo Logico</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6CE16293-7FDB-057E-CBA3-1CBE4E48754C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8E924A06-2299-3B65-B28E-D08DB7ABAE26" name="Factura_Cliente_FK">
+<createdBy>henrr</createdBy>
+<createdTime>2022-09-17 20:18:37 UTC</createdTime>
+<generatorID>3D2CEF65-608C-B7B5-395B-A9DF53ABB79A</generatorID>
+<ownerDesignName>Modelo Logico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5C14DA13-0441-3B1B-4E4D-120FE0405526"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

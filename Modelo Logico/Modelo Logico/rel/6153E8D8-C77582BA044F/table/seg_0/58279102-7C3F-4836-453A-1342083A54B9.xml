@@ -1,0 +1,171 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="58279102-7C3F-4836-453A-1342083A54B9" name="Cliente">
+<createdBy>henrr</createdBy>
+<createdTime>2022-09-17 20:18:37 UTC</createdTime>
+<generatorID>9BEC9671-AFF0-3826-01A6-47C103EB82C7</generatorID>
+<ownerDesignName>Modelo Logico</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_Cliente" id="1D02A248-5930-A52A-F511-1B26ECD60112">
+<createdBy>henrr</createdBy>
+<createdTime>2022-09-17 20:18:37 UTC</createdTime>
+<generatorID>830E6019-1A00-8A16-170D-EE63BA24A0D8</generatorID>
+<ownerDesignName>Modelo Logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nombre" id="9740F607-ECC0-2BAB-2A57-D7924D0FD180">
+<createdBy>henrr</createdBy>
+<createdTime>2022-09-17 20:18:37 UTC</createdTime>
+<generatorID>9E7341B9-4E59-B2C8-490D-AE82DCC1636C</generatorID>
+<ownerDesignName>Modelo Logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Apellido" id="9CE3F114-C987-9859-7748-DACC2579C6EC">
+<createdBy>henrr</createdBy>
+<createdTime>2022-09-17 20:18:37 UTC</createdTime>
+<generatorID>DD28C7DC-FED3-3C88-6C4A-C1B1AFEE5CED</generatorID>
+<ownerDesignName>Modelo Logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Direccion" id="916DA957-1B2A-69BA-40C6-CC272793918F">
+<createdBy>henrr</createdBy>
+<createdTime>2022-09-17 20:18:37 UTC</createdTime>
+<generatorID>04D81C59-610B-83DD-7DD8-BFD07C94EFDA</generatorID>
+<ownerDesignName>Modelo Logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150 CHAR</dataTypeSize>
+<ownDataTypeParameters>150 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Telefono" id="9E201BCA-6326-A0D9-9B88-3F316C0BB657">
+<createdBy>henrr</createdBy>
+<createdTime>2022-09-17 20:18:37 UTC</createdTime>
+<generatorID>89D39A58-46D6-788C-A401-E507B766E84B</generatorID>
+<ownerDesignName>Modelo Logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Salario" id="B5FFFB90-7095-CF97-12F3-CA7E21C25BB4">
+<createdBy>henrr</createdBy>
+<createdTime>2022-09-17 20:18:37 UTC</createdTime>
+<generatorID>299A3505-6919-1E70-EA8C-0DD99FDF5E05</generatorID>
+<ownerDesignName>Modelo Logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,12,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Genero_Id_Genero" id="50865B75-BE87-E09C-93FF-934CF3339CEE">
+<createdBy>henrr</createdBy>
+<createdTime>2022-09-17 20:18:37 UTC</createdTime>
+<generatorID>3DB5BB6D-828B-035F-1980-AA9A263E0E08</generatorID>
+<ownerDesignName>Modelo Logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8EC0CD48-A3AF-C1CF-9B3A-68FA3CDB0D31" referredColumn="8A2B405C-7E31-2D49-FF95-939F8D28F635"/>
+</associations>
+</Column>
+<Column name="Pais_Id_Pais" id="D1781473-467C-8E01-67BB-C079D08FC833">
+<createdBy>henrr</createdBy>
+<createdTime>2022-09-17 20:18:37 UTC</createdTime>
+<generatorID>C4660EC2-C7DF-C221-7C67-AC11478F321F</generatorID>
+<ownerDesignName>Modelo Logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3EA767EC-A681-8BC7-ED14-AF1E480A0227" referredColumn="A1996559-9597-9091-B701-D47847FAE8D5"/>
+</associations>
+</Column>
+<Column name="Tarjeta" id="1AD71BAF-E0F4-C9F5-C5DB-9E6AAFEFB5D8">
+<createdBy>henrr</createdBy>
+<createdTime>2022-09-17 20:24:54 UTC</createdTime>
+<generatorID>91A7EF88-E692-4300-8069-9FF7CD26BF8D</generatorID>
+<ownerDesignName>Modelo Logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Edad" id="3943CB5F-F9F1-C934-6336-F50A8A700628">
+<createdBy>henrr</createdBy>
+<createdTime>2022-09-17 20:24:54 UTC</createdTime>
+<generatorID>4D69462B-6A0B-A30F-EDF3-4322A2B29FA9</generatorID>
+<ownerDesignName>Modelo Logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="66B37213-39A7-5489-1F07-02EABBB6BA08" name="Cliente_PK">
+<createdBy>henrr</createdBy>
+<createdTime>2022-09-17 20:18:37 UTC</createdTime>
+<generatorID>A634A989-4A1A-2EB4-F4FB-BF6938A31801</generatorID>
+<ownerDesignName>Modelo Logico</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1D02A248-5930-A52A-F511-1B26ECD60112"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E591E52F-F45D-4E41-78B4-274E0DC4CECA" name="Cliente_Genero_FK">
+<createdBy>henrr</createdBy>
+<createdTime>2022-09-17 20:18:37 UTC</createdTime>
+<generatorID>7F524503-BD56-76FF-8F80-BECDA7226C1B</generatorID>
+<ownerDesignName>Modelo Logico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="50865B75-BE87-E09C-93FF-934CF3339CEE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0EA35E0B-D5FF-EA55-FFF0-2B0435973EE6" name="Cliente_Pais_FK">
+<createdBy>henrr</createdBy>
+<createdTime>2022-09-17 20:18:37 UTC</createdTime>
+<generatorID>162C45D4-FA7D-EDAE-A020-AE3C6BA37A1C</generatorID>
+<ownerDesignName>Modelo Logico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D1781473-467C-8E01-67BB-C079D08FC833"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
